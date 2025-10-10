@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Sep 23 09:12:29 2025
-| Host             : dzxx39 running 64-bit major release  (build 9200)
+| Date             : Fri Oct 10 19:18:15 2025
+| Host             : DESKTOP-E26AQKP running 64-bit major release  (build 9200)
 | Command          : report_power -file segMsg_power_routed.rpt -pb segMsg_power_summary_routed.pb -rpx segMsg_power_routed.rpx
 | Design           : segMsg
 | Device           : xc7a35tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.573        |
+| Total On-Chip Power (W)  | 7.604        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.496        |
-| Device Static (W)        | 0.077        |
+| Dynamic (W)              | 7.497        |
+| Device Static (W)        | 0.107        |
 | Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 72.7         |
-| Junction Temperature (C) | 37.3         |
+| Max Ambient (C)          | 48.7         |
+| Junction Temperature (C) | 61.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,13 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.023 |        9 |       --- |             --- |
-|   LUT as Logic |     0.023 |        4 |     20800 |            0.02 |
+| Slice Logic    |     0.022 |        9 |       --- |             --- |
+|   LUT as Logic |     0.022 |        4 |     20800 |            0.02 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.050 |       11 |       --- |             --- |
-| I/O            |     2.423 |       16 |       210 |            7.62 |
-| Static Power   |     0.077 |          |           |                 |
-| Total          |     2.573 |          |           |                 |
+| Signals        |     0.074 |       11 |       --- |             --- |
+| I/O            |     7.401 |       17 |       210 |            8.10 |
+| Static Power   |     0.107 |          |           |                 |
+| Total          |     7.604 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,16 +68,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.104 |       0.089 |      0.015 |
-| Vccaux    |       1.800 |     0.210 |       0.197 |      0.013 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vccint    |       1.000 |     0.151 |       0.112 |      0.039 |
+| Vccaux    |       1.800 |     0.286 |       0.271 |      0.016 |
+| Vcco33    |       3.300 |     2.091 |       2.090 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     1.141 |       1.140 |      0.001 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -135,7 +135,7 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| segMsg |     2.496 |
+| segMsg |     7.497 |
 +--------+-----------+
 
 

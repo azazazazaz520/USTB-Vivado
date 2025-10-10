@@ -25,10 +25,13 @@ module segMsg(
     input key3 ,
     input key4 ,
     output reg [ 3: 0] pos ,
-    output reg [ 7: 0] seg
+    output reg [ 7: 0] seg,
+    output key
 
     );
     wire [ 3: 0] data = {key4 , key3 , key2 , key1 };
+    assign key = 1'b1;
+
     always@ ( data ) begin
         pos = 4'b0001;
         case ( data )
