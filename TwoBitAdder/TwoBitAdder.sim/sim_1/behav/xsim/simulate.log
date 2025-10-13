@@ -1,0 +1,4 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Test 1: A=01 , B=01 , Cin=0->Cout=x , Sum=xx
+$finish called at time : 40 ns : File "D:/source/Vivado/USTB-Vivado/TwoBitAdder/TwoBitAdder.srcs/sim_1/new/sim.v" Line 26
