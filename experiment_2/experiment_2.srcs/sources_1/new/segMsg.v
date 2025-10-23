@@ -24,7 +24,7 @@ module segMsg(
     input key2 ,
     input key3 ,
     input key4 ,
-    output reg [ 3: 0] pos ,
+    output reg [ 3: 0] pos,
     output reg [ 7: 0] seg,
     output key
 

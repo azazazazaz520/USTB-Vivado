@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/source/Vivado/USTB-Vivado/experiment_2/experiment_2.srcs/sources_1/new/segMsg.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module segMsg
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/source/Vivado/USTB-Vivado/experiment_2/experiment_2.srcs/sim_1/new/sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module segMsg_tb

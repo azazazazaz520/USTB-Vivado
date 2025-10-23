@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Oct 10 19:18:15 2025
+| Date         : Tue Oct 21 08:44:24 2025
 | Host         : DESKTOP-E26AQKP running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file segMsg_timing_summary_routed.rpt -pb segMsg_timing_summary_routed.pb -rpx segMsg_timing_summary_routed.rpx -warn_on_violation
 | Design       : segMsg

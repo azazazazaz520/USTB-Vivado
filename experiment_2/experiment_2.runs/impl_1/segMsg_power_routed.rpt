@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Fri Oct 10 19:18:15 2025
+| Date             : Tue Oct 21 08:44:24 2025
 | Host             : DESKTOP-E26AQKP running 64-bit major release  (build 9200)
 | Command          : report_power -file segMsg_power_routed.rpt -pb segMsg_power_summary_routed.pb -rpx segMsg_power_routed.rpx
 | Design           : segMsg
@@ -68,7 +68,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.151 |       0.112 |      0.039 |
+| Vccint    |       1.000 |     0.150 |       0.112 |      0.039 |
 | Vccaux    |       1.800 |     0.286 |       0.271 |      0.016 |
 | Vcco33    |       3.300 |     2.091 |       2.090 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

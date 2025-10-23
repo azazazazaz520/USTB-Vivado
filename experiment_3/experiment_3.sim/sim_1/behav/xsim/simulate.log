@@ -1,0 +1,9 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Move指令: ds_to_es_bus = 855aa12
+rx = 01, ry = 10
+Add指令: ds_to_es_bus = 455aa34
+Sub指令: ds_to_es_bus = 255aa56
+Mul指令: ds_to_es_bus = 155aa78
+非法操作码: ds_to_es_bus = 055aa9a
+$finish called at time : 60 ns : File "D:/source/Vivado/USTB-Vivado/experiment_3/experiment_3.srcs/sim_1/new/sim.v" Line 70
