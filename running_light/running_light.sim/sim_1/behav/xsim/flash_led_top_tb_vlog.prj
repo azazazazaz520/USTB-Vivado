@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/Lenovo/Downloads/counter.v" \
+"C:/Users/Lenovo/Downloads/flash_led_ctl.v" \
+"C:/Users/Lenovo/Downloads/flash_led_top.v" \
+"../../../../running_light.srcs/sources_1/new/speed_calculator.v" \
+"C:/Users/Lenovo/Downloads/Flash_led_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

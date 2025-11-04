@@ -1,2 +1,21 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
+开始ALU仿真测试
+时间	操作码	操作数1	操作数2	结果
+------------------------------------------------
+110000	ADD	25	37	5c
+120000	SUB	50	30	20
+130000	AND	f0	0f	00
+140000	OR	a0	0a	01
+150000	SHL	00001111	10	00111100
+160000	ASR	11110000	01	01111000
+170000	ROR	10110011	11	00010110
+180000	SLT	80(-128)	7f(127)	01
+190000	ULT	80(128)	7f(127)	00
+200000	CARRY	ff	01	80
+210000	XOR	aa	55	ff
+220000	NPERM	12	34	21
+230000	DEFAULT	aa	bb	00
+------------------------------------------------
+ALU仿真测试完成！
+$finish called at time : 230 ns : File "D:/source/Vivado/USTB-Vivado/8bit_ALU/8bit_ALU.srcs/sim_1/new/sim.v" Line 128

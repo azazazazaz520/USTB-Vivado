@@ -1,0 +1,45 @@
+# Vivado generated folders
+*/.Xil/
+*/.cache/
+*/.ip_user_files/
+*/.runs/
+*/.sim/
+*/.srcs/sources_1/ip/
+*/.hw/
+*/.sdk/
+*/.gen/
+
+# Simulation / synthesis outputs
+*.jou
+*.log
+*.str
+*.dcp
+*.wdb
+*.pb
+*.bit
+*.bin
+*.mcs
+*.elf
+
+# Vivado project backup and autosave files
+*.backup*
+*.tmp
+*.crash
+
+# Vivado WebTalk
+*.webtalk
+*.xml
+*.html
+*.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.swo
+
+# Zip and build outputs
+*.zip
+*.tar
+*.gz
