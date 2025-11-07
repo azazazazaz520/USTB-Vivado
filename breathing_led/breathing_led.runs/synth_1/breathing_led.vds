@@ -1,0 +1,336 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov  6 21:49:27 2025
+# Process ID: 13032
+# Current directory: D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.runs/synth_1
+# Command line: vivado.exe -log breathing_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source breathing_led.tcl
+# Log file: D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.runs/synth_1/breathing_led.vds
+# Journal file: D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source breathing_led.tcl -notrace
+Command: synth_design -top breathing_led -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19324 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 362.145 ; gain = 100.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'breathing_led' [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/sources_1/new/breathing_led.v:2]
+	Parameter CNT_MAX bound to: 10000000 - type: integer 
+	Parameter BRIGHTNESS_MAX bound to: 10000 - type: integer 
+	Parameter BRIGHTNESS_STEP bound to: 400 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'breathing_led' (1#1) [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/sources_1/new/breathing_led.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 418.809 ; gain = 157.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 418.809 ; gain = 157.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 418.809 ; gain = 157.219
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/constrs_1/new/1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led'. [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/constrs_1/new/1.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/constrs_1/new/1.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led'. [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/constrs_1/new/1.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/constrs_1/new/1.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/constrs_1/new/1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.srcs/constrs_1/new/1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/breathing_led_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/breathing_led_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.973 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.973 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 735.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 735.973 ; gain = 474.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 735.973 ; gain = 474.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 735.973 ; gain = 474.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 735.973 ; gain = 474.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module breathing_led 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'cnt_reg[24]' (FDC) to 'cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cnt_reg[25]' (FDC) to 'cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cnt_reg[26]' (FDC) to 'cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cnt_reg[27]' (FDC) to 'cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cnt_reg[28]' (FDC) to 'cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cnt_reg[29]' (FDC) to 'cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cnt_reg[30]' (FDC) to 'cnt_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cnt_reg[31]' (FDC) to 'pwm_cnt_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[14]' (FDC) to 'pwm_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[15]' (FDC) to 'pwm_cnt_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[16]' (FDC) to 'pwm_cnt_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[17]' (FDC) to 'pwm_cnt_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[18]' (FDC) to 'pwm_cnt_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[19]' (FDC) to 'pwm_cnt_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[20]' (FDC) to 'pwm_cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[21]' (FDC) to 'pwm_cnt_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[22]' (FDC) to 'pwm_cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[23]' (FDC) to 'pwm_cnt_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[24]' (FDC) to 'pwm_cnt_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[25]' (FDC) to 'pwm_cnt_reg[26]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[26]' (FDC) to 'pwm_cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[27]' (FDC) to 'pwm_cnt_reg[28]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[28]' (FDC) to 'pwm_cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[29]' (FDC) to 'pwm_cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pwm_cnt_reg[30]' (FDC) to 'pwm_cnt_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pwm_cnt_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 735.973 ; gain = 474.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 737.281 ; gain = 475.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 737.430 ; gain = 475.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    19|
+|4     |LUT2   |    46|
+|5     |LUT3   |     3|
+|6     |LUT4   |    12|
+|7     |LUT5   |    17|
+|8     |LUT6   |     8|
+|9     |FDCE   |    52|
+|10    |FDPE   |     1|
+|11    |IBUF   |     6|
+|12    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   193|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 748.094 ; gain = 169.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 748.094 ; gain = 486.504
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 757.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 757.195 ; gain = 502.887
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 757.195 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/source/Vivado/USTB-Vivado/breathing_led/breathing_led.runs/synth_1/breathing_led.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file breathing_led_utilization_synth.rpt -pb breathing_led_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  6 21:49:42 2025...
